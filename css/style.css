@@ -31,11 +31,11 @@ Image credits: unsplash.com
 /********************************/
 .hero {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 45%;
     z-index: 3;
     color: #fff;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     text-shadow: 1px 1px 0 rgba(0,0,0,.75);
       -webkit-transform: translate3d(-50%,-50%,0);
@@ -45,8 +45,8 @@ Image credits: unsplash.com
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 6em;    
-    font-weight: bold;
+    font-weight: 300;
+    font-size: 70px;
     margin: 0;
     padding: 0;
 }
@@ -77,7 +77,7 @@ Image credits: unsplash.com
     height: 100%;
     z-index: 2;
     background-color: #080d15;
-    opacity: .25;
+    opacity: .1;
 }
 
 /********************************/
@@ -262,3 +262,19 @@ Image credits: unsplash.com
 }
 .modal-body {padding: 2px 16px;}
 
+
+
+
+.m5 {
+    margin: 5px !important;
+}
+.cpo {
+   
+     width: auto !important; 
+     height: auto !important; 
+    margin: 5px !important;
+}
+
+.make-center{
+  text-align: center;
+}
