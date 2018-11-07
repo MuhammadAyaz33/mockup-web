@@ -262,3 +262,9 @@ Image credits: unsplash.com
 }
 .modal-body {padding: 2px 16px;}
 
+#logo {
+  position: absolute;
+  width: 250px;
+  top: -55px;
+}
+
