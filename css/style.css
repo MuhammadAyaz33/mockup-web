@@ -272,7 +272,7 @@ for mobile only
 .modal-body {padding: 2px 16px;}
 
 /*for more-content load*/
-#grid div:nth-child(n+5) {
+#grid div:nth-child(n+5),#grid-projects div:nth-child(n+5) {
    display: none;
 }
 /*global css*/

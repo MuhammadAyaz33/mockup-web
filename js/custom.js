@@ -82,8 +82,17 @@ $(window).load(function(){
 
 // optional
        
-// for more-content load
+// for products more-content load
  $('#sales').click(function() {
-  $('#grid div:hidden').slice(0, 15).slideDown();
+  console.log("called")
+  $('#grid div:hidden').slice(0, 10).slideDown();
 });
-// for more-content load
+// for products more-content load
+
+// for projects more-content load
+ $('#peoject1').click(function() {
+  console.log("called")
+  $('#grid-projects div:hidden').slice(0, 10).slideDown();
+});
+// for projects more-content load
+
