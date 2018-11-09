@@ -82,3 +82,8 @@ $(window).load(function(){
 
 // optional
        
+// for more-content load
+ $('#sales').click(function() {
+  $('#grid div:hidden').slice(0, 15).slideDown();
+});
+// for more-content load

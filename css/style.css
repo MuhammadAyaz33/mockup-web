@@ -3,7 +3,12 @@ Fade content bs-carousel with hero headers
 Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
 Image credits: unsplash.com
 */
-
+.responsive-img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
 /********************************/
 /*       Fade Bs-carousel       */
 /********************************/
@@ -80,19 +85,6 @@ Image credits: unsplash.com
     opacity: .1;
 }
 
-/********************************/
-/*          Custom Buttons      */
-/********************************/
-.btn.btn-lg {padding: 10px 40px;}
-.btn.btn-hero,
-.btn.btn-hero:hover,
-.btn.btn-hero:focus {
-    color: #f5f5f5;
-    background-color: #28A7E9;
-    border-color: #28A7E9;
-    outline: none;
-    margin: 20px auto;
-}
 
 /********************************/
 /*       Slides backgrounds     */
@@ -118,13 +110,34 @@ Image credits: unsplash.com
 /********************************/
 /*          Media Queries       */
 /********************************/
-@media screen and (min-width: 980px){
-    .hero { width: 980px; }    
-}
-@media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
-}
 
+for mobile only
+@media  only screen and (max-width: 400px){
+
+}
+@media only screen and (max-width:450px){
+  .fade-carousel {
+      height: 60vh;
+  }
+  .fade-carousel .carousel-inner .item {
+      height: 60vh;
+  }
+  .hero{
+    top: 50%;
+    left: 60%;
+    width: 100% !important;  
+  }
+  .hero h1 {
+    font-size: 30px; 
+  }  
+  .hero h3 {
+    font-size: 16px;  
+  } 
+  .box .box-content{
+    padding-top:20%;
+  }
+
+} 
 /*for product card only*/
 .box{
   text-align:center;
@@ -190,11 +203,7 @@ Image credits: unsplash.com
   transition:all .6s cubic-bezier(.175,.885,.32,1.275) .1s;
 }
 
-@media only screen and (max-width:360px){
-  .box .box-content{
-    padding-top:20%;
-  }
-} 
+
 /*for product card only*/
 
 
@@ -262,14 +271,16 @@ Image credits: unsplash.com
 }
 .modal-body {padding: 2px 16px;}
 
+/*for more-content load*/
+#grid div:nth-child(n+5) {
+   display: none;
+}
+/*global css*/
 #logo {
   position: absolute;
   width: 250px;
   top: -55px;
 }
-
-
-
 
 .m5 {
     margin: 5px !important;
@@ -284,3 +295,122 @@ Image credits: unsplash.com
 .make-center{
   text-align: center;
 }
+/*global css*/
+
+/*for partner section */
+
+.slick-slide {
+    margin: 0px 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+/*for partner section */

@@ -38,8 +38,7 @@ h2 span
 #about, #team, #service,
 #portfolio, #contact
 	{
-		padding-top: 60px;
-		padding-bottom: 40px;
+		padding: 40px 0px;
 	}
 /* end about team service portfolio contact */
 
@@ -223,26 +222,29 @@ header .social-icon li a
 	}
 #home*/
 #product .btn
-	{
-		background: transparent;
-		border-radius: 2px;
-		color: #fff;
-		font-size: 16px;
-		font-weight: bold;
-		margin-top: 20px;
-		width: 180px;
-		height: 60px;
-		padding-top: 18px;
-		-webkit-transition: all 0.4s ease-in-out;
-		        transition: all 0.4s ease-in-out;
-	}
+{
+	background: transparent;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+	width: 180px;
+	height: 60px;
+	-webkit-transition: all 0.4s ease-in-out;
+	        transition: all 0.4s ease-in-out;
+}
 /*#home*/
  #product .btn:hover
-	{
-		color: #fff;
-		background: #28a7e9;
-		border-color: transparent;
-	}
+{
+	color: #fff;
+	background: #28a7e9;
+	border-color: transparent;
+}
+ #product .btn:focus
+{
+	outline: none;
+}
 .element {
 	height: 60px;
 	font-size: 16px;
@@ -341,10 +343,7 @@ header .social-icon li a
 /* end service */
 
 /* start portfolio */
-#portfolio
-	{
-		padding-bottom: 80px;
-	}
+
 #portfolio .col-md-3
 	{
 		padding: 0px;
