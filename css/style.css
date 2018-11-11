@@ -111,9 +111,12 @@ Image credits: unsplash.com
 /*          Media Queries       */
 /********************************/
 
-for mobile only
-@media  only screen and (max-width: 400px){
+/*for mobile only*/
 
+@media only screen and (max-width: 600px) {
+    .custom-form{
+      width: 100% !important;
+    }
 }
 @media only screen and (max-width:450px){
   .fade-carousel {
@@ -281,7 +284,9 @@ for mobile only
   width: 250px;
   top: -55px;
 }
-
+.pt20{
+    padding-top:20px;
+}
 .m5 {
     margin: 5px !important;
 }
@@ -414,3 +419,70 @@ for mobile only
     display: none;
 }
 /*for partner section */
+
+/*for upload image only*/
+.custom-form{
+  width: 40%;
+  margin: auto;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    background: #28a7e9 !important;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid #28a7e9;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #fff;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    padding: 15px 20px;
+}
+
+.inputfile + label svg {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+.btn-group{
+  display: flex;
+}
+.upload-btn input{
+  height: 50px !important;
+  background: transparent !important;
+  width: 50% !important;
+  border: 1px solid #28a7e9 !important;
+}
+.upload-btn input:hover{
+  background: #28a7e9 !important;
+}
+/*for upload image only*/
+
+.card{
+  background: #1c1d20;
+  margin-bottom: 10px; 
+}
+.card-body{
+  padding: 5px 10px;
+}
+.responsive-img{
+  padding: 0px;
+}
