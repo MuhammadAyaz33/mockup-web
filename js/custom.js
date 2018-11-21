@@ -84,15 +84,13 @@ $(window).load(function(){
        
 // for products more-content load
  $('#sales').click(function() {
-  console.log("called")
-  $('#grid div:hidden').slice(0, 10).slideDown();
+  $('#grid div:hidden').slice(0, 10000).slideDown();
 });
 // for products more-content load
 
 // for projects more-content load
  $('#peoject1').click(function() {
-  console.log("called")
-  $('#grid-projects div:hidden').slice(0, 10).slideDown();
+  $('#grid-projects div:hidden').slice(0, 10000).slideDown();
 });
 // for projects more-content load
 

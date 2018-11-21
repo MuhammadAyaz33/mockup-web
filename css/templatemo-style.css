@@ -348,10 +348,10 @@ header .social-icon li a
 	{
 		padding: 0px;
 	}
-	.portfolio-thumb, 
+	/* .portfolio-thumb, 
 	.portfolio-overlay {
 		max-width: 450px;
-	}
+	} */
 #portfolio .portfolio-thumb
 	{
 		overflow: hidden;
